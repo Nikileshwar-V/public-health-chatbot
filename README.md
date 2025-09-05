@@ -1,4 +1,4 @@
-# Public Health Chatbot
+# Public Health Chabot
 
 A multilingual health assistant chatbot built using **Rasa**. This bot provides information on symptoms, prevention, and vaccines for various diseases, supporting both **English** and **Odia** languages. The bot is trained with intents for multiple diseases like Dengue, Malaria, COVID-19, Diabetes, Hypertension, Typhoid, Measles, Kala Azar, and more.
 
