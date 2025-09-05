@@ -94,7 +94,7 @@ public-health-chatbot/
 | Name        | Contribution                                                                                                                                                                                                              |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Nikil**   | - Created the Rasa chatbot framework.<br>- Developed intents and responses for diseases.<br>- Trained the initial models and created the pre-trained `.tar.gz` files.<br>- Added English and Odia responses.<br>- Designed NLU training data (`nlu.yml`) and conversation stories (`stories.yml`).<br>- Added rules for predictable responses (`rules.yml`).<br>- Verified bot responses, fixed errors             |
-| **Gowtham** | - Designed NLU training data (`nlu.yml`) and conversation stories (`stories.yml`).<br>- Added rules for predictable responses (`rules.yml`).<br>- Verified bot responses, fixed errors, and ensured multilingual support. |
+| **Gowtham** | - Collected trusted health data from WHO, ICMR, and MoHFW.<br> - Structured the data into a chatbot-friendly CSV with columns: Disease, Symptoms (EN), Prevention (EN), Vaccine Info (EN), Source Link.<br> - Translated key fields (Symptoms & Prevention) into Odia.<br> - Shared the finalized dataset with Nikil for training. |
 
 ---
 
