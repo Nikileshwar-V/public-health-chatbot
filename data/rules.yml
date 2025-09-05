@@ -1,0 +1,257 @@
+version: "3.1"
+
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Bot identity
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  # -------------------- Dengue --------------------
+  - rule: Respond to Dengue symptoms
+    steps:
+      - intent: ask_symptoms_dengue
+      - action: utter_symptoms_dengue
+
+  - rule: Respond to Dengue prevention
+    steps:
+      - intent: ask_prevention_dengue
+      - action: utter_prevention_dengue
+
+  - rule: Respond to Dengue vaccine
+    steps:
+      - intent: ask_vaccine_dengue
+      - action: utter_vaccine_dengue
+
+  # -------------------- Malaria --------------------
+  - rule: Respond to Malaria symptoms
+    steps:
+      - intent: ask_symptoms_malaria
+      - action: utter_symptoms_malaria
+
+  - rule: Respond to Malaria prevention
+    steps:
+      - intent: ask_prevention_malaria
+      - action: utter_prevention_malaria
+
+  - rule: Respond to Malaria vaccine
+    steps:
+      - intent: ask_vaccine_malaria
+      - action: utter_vaccine_malaria
+
+  # -------------------- Tuberculosis --------------------
+  - rule: Respond to Tuberculosis symptoms
+    steps:
+      - intent: ask_symptoms_tuberculosis
+      - action: utter_symptoms_tuberculosis
+
+  - rule: Respond to Tuberculosis prevention
+    steps:
+      - intent: ask_prevention_tuberculosis
+      - action: utter_prevention_tuberculosis
+
+  - rule: Respond to Tuberculosis vaccine
+    steps:
+      - intent: ask_vaccine_tuberculosis
+      - action: utter_vaccine_tuberculosis
+
+  # -------------------- COVID-19 --------------------
+  - rule: Respond to COVID-19 symptoms
+    steps:
+      - intent: ask_symptoms_covid19
+      - action: utter_symptoms_covid19
+
+  - rule: Respond to COVID-19 prevention
+    steps:
+      - intent: ask_prevention_covid19
+      - action: utter_prevention_covid19
+
+  - rule: Respond to COVID-19 vaccine
+    steps:
+      - intent: ask_vaccine_covid19
+      - action: utter_vaccine_covid19
+
+  # -------------------- Diabetes (Type 2) --------------------
+  - rule: Respond to Diabetes symptoms
+    steps:
+      - intent: ask_symptoms_diabetes_type2
+      - action: utter_symptoms_diabetes_type2
+
+  - rule: Respond to Diabetes prevention
+    steps:
+      - intent: ask_prevention_diabetes_type2
+      - action: utter_prevention_diabetes_type2
+
+  - rule: Respond to Diabetes vaccine
+    steps:
+      - intent: ask_vaccine_diabetes_type2
+      - action: utter_vaccine_diabetes_type2
+
+  # -------------------- Hypertension --------------------
+  - rule: Respond to Hypertension symptoms
+    steps:
+      - intent: ask_symptoms_hypertension
+      - action: utter_symptoms_hypertension
+
+  - rule: Respond to Hypertension prevention
+    steps:
+      - intent: ask_prevention_hypertension
+      - action: utter_prevention_hypertension
+
+  - rule: Respond to Hypertension vaccine
+    steps:
+      - intent: ask_vaccine_hypertension
+      - action: utter_vaccine_hypertension
+
+  # -------------------- Typhoid --------------------
+  - rule: Respond to Typhoid symptoms
+    steps:
+      - intent: ask_symptoms_typhoid
+      - action: utter_symptoms_typhoid
+
+  - rule: Respond to Typhoid prevention
+    steps:
+      - intent: ask_prevention_typhoid
+      - action: utter_prevention_typhoid
+
+  - rule: Respond to Typhoid vaccine
+    steps:
+      - intent: ask_vaccine_typhoid
+      - action: utter_vaccine_typhoid
+
+  # -------------------- Chikungunya --------------------
+  - rule: Respond to Chikungunya symptoms
+    steps:
+      - intent: ask_symptoms_chikungunya
+      - action: utter_symptoms_chikungunya
+
+  - rule: Respond to Chikungunya prevention
+    steps:
+      - intent: ask_prevention_chikungunya
+      - action: utter_prevention_chikungunya
+
+  - rule: Respond to Chikungunya vaccine
+    steps:
+      - intent: ask_vaccine_chikungunya
+      - action: utter_vaccine_chikungunya
+
+  # -------------------- Hepatitis A --------------------
+  - rule: Respond to Hepatitis A symptoms
+    steps:
+      - intent: ask_symptoms_hepatitis_a
+      - action: utter_symptoms_hepatitis_a
+
+  - rule: Respond to Hepatitis A prevention
+    steps:
+      - intent: ask_prevention_hepatitis_a
+      - action: utter_prevention_hepatitis_a
+
+  - rule: Respond to Hepatitis A vaccine
+    steps:
+      - intent: ask_vaccine_hepatitis_a
+      - action: utter_vaccine_hepatitis_a
+
+  # -------------------- Leptospirosis --------------------
+  - rule: Respond to Leptospirosis symptoms
+    steps:
+      - intent: ask_symptoms_leptospirosis
+      - action: utter_symptoms_leptospirosis
+
+  - rule: Respond to Leptospirosis prevention
+    steps:
+      - intent: ask_prevention_leptospirosis
+      - action: utter_prevention_leptospirosis
+
+  - rule: Respond to Leptospirosis vaccine
+    steps:
+      - intent: ask_vaccine_leptospirosis
+      - action: utter_vaccine_leptospirosis
+
+  # -------------------- Seasonal Influenza --------------------
+  - rule: Respond to Influenza symptoms
+    steps:
+      - intent: ask_symptoms_seasonal_influenza
+      - action: utter_symptoms_seasonal_influenza
+
+  - rule: Respond to Influenza prevention
+    steps:
+      - intent: ask_prevention_seasonal_influenza
+      - action: utter_prevention_seasonal_influenza
+
+  - rule: Respond to Influenza vaccine
+    steps:
+      - intent: ask_vaccine_seasonal_influenza
+      - action: utter_vaccine_seasonal_influenza
+
+  # -------------------- Pneumonia --------------------
+  - rule: Respond to Pneumonia symptoms
+    steps:
+      - intent: ask_symptoms_pneumonia
+      - action: utter_symptoms_pneumonia
+
+  - rule: Respond to Pneumonia prevention
+    steps:
+      - intent: ask_prevention_pneumonia
+      - action: utter_prevention_pneumonia
+
+  - rule: Respond to Pneumonia vaccine
+    steps:
+      - intent: ask_vaccine_pneumonia
+      - action: utter_vaccine_pneumonia
+
+  # -------------------- Diarrheal Diseases --------------------
+  - rule: Respond to Diarrheal disease symptoms
+    steps:
+      - intent: ask_symptoms_diarrhea
+      - action: utter_symptoms_diarrhea
+
+  - rule: Respond to Diarrheal disease prevention
+    steps:
+      - intent: ask_prevention_diarrhea
+      - action: utter_prevention_diarrhea
+
+  - rule: Respond to Diarrheal disease vaccine
+    steps:
+      - intent: ask_vaccine_diarrhea
+      - action: utter_vaccine_diarrhea
+
+  # -------------------- Measles --------------------
+  - rule: Respond to Measles symptoms
+    steps:
+      - intent: ask_symptoms_measles
+      - action: utter_symptoms_measles
+
+  - rule: Respond to Measles prevention
+    steps:
+      - intent: ask_prevention_measles
+      - action: utter_prevention_measles
+
+  - rule: Respond to Measles vaccine
+    steps:
+      - intent: ask_vaccine_measles
+      - action: utter_vaccine_measles
+
+  # -------------------- Kala-azar --------------------
+  - rule: Respond to Kala-azar symptoms
+    steps:
+      - intent: ask_symptoms_kala_azar
+      - action: utter_symptoms_kala_azar
+
+  - rule: Respond to Kala-azar prevention
+    steps:
+      - intent: ask_prevention_kala_azar
+      - action: utter_prevention_kala_azar
+
+  - rule: Respond to Kala-azar vaccine
+    steps:
+      - intent: ask_vaccine_kala_azar
+      - action: utter_vaccine_kala_azar

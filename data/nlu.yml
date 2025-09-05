@@ -1,0 +1,542 @@
+version: '3.1'
+nlu:
+- intent: ask_symptoms_dengue
+  examples: '- What are the symptoms of Dengue?
+
+    - Tell me the symptoms of Dengue.
+
+    - How do I know if I have Dengue?
+
+    - Signs of Dengue?
+
+    - Common symptoms of Dengue
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Dengue ହୋଇଛି କି?'
+- intent: ask_prevention_dengue
+  examples: '- How to prevent Dengue?
+
+    - Prevention tips for Dengue.
+
+    - How can I avoid Dengue?
+
+    - Ways to prevent Dengue
+
+    - Steps to prevent Dengue
+
+    - Dengue ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_dengue
+  examples: '- Is there a vaccine for Dengue?
+
+    - Tell me about Dengue vaccine.
+
+    - Do we have vaccination for Dengue?
+
+    - Dengue vaccine availability?
+
+    - Is Dengue vaccine recommended?
+
+    - Dengue ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_malaria
+  examples: '- What are the symptoms of Malaria?
+
+    - Tell me the symptoms of Malaria.
+
+    - How do I know if I have Malaria?
+
+    - Signs of Malaria?
+
+    - Common symptoms of Malaria
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Malaria ହୋଇଛି କି?'
+- intent: ask_prevention_malaria
+  examples: '- How to prevent Malaria?
+
+    - Prevention tips for Malaria.
+
+    - How can I avoid Malaria?
+s
+    - Ways to prevent Malaria
+
+    - Steps to prevent Malaria
+
+    - Malaria ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_malaria
+  examples: '- Is there a vaccine for Malaria?
+
+    - Tell me about Malaria vaccine.
+
+    - Do we have vaccination for Malaria?
+
+    - Malaria vaccine availability?
+
+    - Is Malaria vaccine recommended?
+
+    - Malaria ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_tuberculosis
+  examples: '- What are the symptoms of Tuberculosis?
+
+    - Tell me the symptoms of Tuberculosis.
+
+    - How do I know if I have Tuberculosis?
+
+    - Signs of Tuberculosis?
+
+    - Common symptoms of Tuberculosis
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Tuberculosis ହୋଇଛି କି?'
+- intent: ask_prevention_tuberculosis
+  examples: '- How to prevent Tuberculosis?
+
+    - Prevention tips for Tuberculosis.
+
+    - How can I avoid Tuberculosis?
+
+    - Ways to prevent Tuberculosis
+
+    - Steps to prevent Tuberculosis
+
+    - Tuberculosis ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_tuberculosis
+  examples: '- Is there a vaccine for Tuberculosis?
+
+    - Tell me about Tuberculosis vaccine.
+
+    - Do we have vaccination for Tuberculosis?
+
+    - Tuberculosis vaccine availability?
+
+    - Is Tuberculosis vaccine recommended?
+
+    - Tuberculosis ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_covid19
+  examples: '- What are the symptoms of Covid19?
+
+    - Tell me the symptoms of Covid19.
+
+    - How do I know if I have Covid19?
+
+    - Signs of Covid19?
+
+    - Common symptoms of Covid19
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Covid19 ହୋଇଛି କି?'
+- intent: ask_prevention_covid19
+  examples: '- How to prevent Covid19?
+
+    - Prevention tips for Covid19.
+
+    - How can I avoid Covid19?
+
+    - Ways to prevent Covid19
+
+    - Steps to prevent Covid19
+
+    - Covid19 ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_covid19
+  examples: '- Is there a vaccine for Covid19?
+
+    - Tell me about Covid19 vaccine.
+
+    - Do we have vaccination for Covid19?
+
+    - Covid19 vaccine availability?
+
+    - Is Covid19 vaccine recommended?
+
+    - Covid19 ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_diabetes_type2
+  examples: '- What are the symptoms of Diabetes Type2?
+
+    - Tell me the symptoms of Diabetes Type2.
+
+    - How do I know if I have Diabetes Type2?
+
+    - Signs of Diabetes Type2?
+
+    - Common symptoms of Diabetes Type2
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Diabetes Type2 ହୋଇଛି କି?'
+- intent: ask_prevention_diabetes_type2
+  examples: '- How to prevent Diabetes Type2?
+
+    - Prevention tips for Diabetes Type2.
+
+    - How can I avoid Diabetes Type2?
+
+    - Ways to prevent Diabetes Type2
+
+    - Steps to prevent Diabetes Type2
+
+    - Diabetes Type2 ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_diabetes_type2
+  examples: '- Is there a vaccine for Diabetes Type2?
+
+    - Tell me about Diabetes Type2 vaccine.
+
+    - Do we have vaccination for Diabetes Type2?
+
+    - Diabetes Type2 vaccine availability?
+
+    - Is Diabetes Type2 vaccine recommended?
+
+    - Diabetes Type2 ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_hypertension
+  examples: '- What are the symptoms of Hypertension?
+
+    - Tell me the symptoms of Hypertension.
+
+    - How do I know if I have Hypertension?
+
+    - Signs of Hypertension?
+
+    - Common symptoms of Hypertension
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Hypertension ହୋଇଛି କି?'
+- intent: ask_prevention_hypertension
+  examples: '- How to prevent Hypertension?
+
+    - Prevention tips for Hypertension.
+
+    - How can I avoid Hypertension?
+
+    - Ways to prevent Hypertension
+
+    - Steps to prevent Hypertension
+
+    - Hypertension ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_hypertension
+  examples: '- Is there a vaccine for Hypertension?
+
+    - Tell me about Hypertension vaccine.
+
+    - Do we have vaccination for Hypertension?
+
+    - Hypertension vaccine availability?
+
+    - Is Hypertension vaccine recommended?
+
+    - Hypertension ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_typhoid
+  examples: '- What are the symptoms of Typhoid?
+
+    - Tell me the symptoms of Typhoid.
+
+    - How do I know if I have Typhoid?
+
+    - Signs of Typhoid?
+
+    - Common symptoms of Typhoid
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Typhoid ହୋଇଛି କି?'
+- intent: ask_prevention_typhoid
+  examples: '- How to prevent Typhoid?
+
+    - Prevention tips for Typhoid.
+
+    - How can I avoid Typhoid?
+
+    - Ways to prevent Typhoid
+
+    - Steps to prevent Typhoid
+
+    - Typhoid ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_typhoid
+  examples: '- Is there a vaccine for Typhoid?
+
+    - Tell me about Typhoid vaccine.
+
+    - Do we have vaccination for Typhoid?
+
+    - Typhoid vaccine availability?
+
+    - Is Typhoid vaccine recommended?
+
+    - Typhoid ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_chikungunya
+  examples: '- What are the symptoms of Chikungunya?
+
+    - Tell me the symptoms of Chikungunya.
+
+    - How do I know if I have Chikungunya?
+
+    - Signs of Chikungunya?
+
+    - Common symptoms of Chikungunya
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Chikungunya ହୋଇଛି କି?'
+- intent: ask_prevention_chikungunya
+  examples: '- How to prevent Chikungunya?
+
+    - Prevention tips for Chikungunya.
+
+    - How can I avoid Chikungunya?
+
+    - Ways to prevent Chikungunya
+
+    - Steps to prevent Chikungunya
+
+    - Chikungunya ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_chikungunya
+  examples: '- Is there a vaccine for Chikungunya?
+
+    - Tell me about Chikungunya vaccine.
+
+    - Do we have vaccination for Chikungunya?
+
+    - Chikungunya vaccine availability?
+
+    - Is Chikungunya vaccine recommended?
+
+    - Chikungunya ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_hepatitis_a
+  examples: '- What are the symptoms of Hepatitis A?
+
+    - Tell me the symptoms of Hepatitis A.
+
+    - How do I know if I have Hepatitis A?
+
+    - Signs of Hepatitis A?
+
+    - Common symptoms of Hepatitis A
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Hepatitis A ହୋଇଛି କି?'
+- intent: ask_prevention_hepatitis_a
+  examples: '- How to prevent Hepatitis A?
+
+    - Prevention tips for Hepatitis A.
+
+    - How can I avoid Hepatitis A?
+
+    - Ways to prevent Hepatitis A
+
+    - Steps to prevent Hepatitis A
+
+    - Hepatitis A ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_hepatitis_a
+  examples: '- Is there a vaccine for Hepatitis A?
+
+    - Tell me about Hepatitis A vaccine.
+
+    - Do we have vaccination for Hepatitis A?
+
+    - Hepatitis A vaccine availability?
+
+    - Is Hepatitis A vaccine recommended?
+
+    - Hepatitis A ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_leptospirosis
+  examples: '- What are the symptoms of Leptospirosis?
+
+    - Tell me the symptoms of Leptospirosis.
+
+    - How do I know if I have Leptospirosis?
+
+    - Signs of Leptospirosis?
+
+    - Common symptoms of Leptospirosis
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Leptospirosis ହୋଇଛି କି?'
+- intent: ask_prevention_leptospirosis
+  examples: '- How to prevent Leptospirosis?
+
+    - Prevention tips for Leptospirosis.
+
+    - How can I avoid Leptospirosis?
+
+    - Ways to prevent Leptospirosis
+
+    - Steps to prevent Leptospirosis
+
+    - Leptospirosis ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_leptospirosis
+  examples: '- Is there a vaccine for Leptospirosis?
+
+    - Tell me about Leptospirosis vaccine.
+
+    - Do we have vaccination for Leptospirosis?
+
+    - Leptospirosis vaccine availability?
+
+    - Is Leptospirosis vaccine recommended?
+
+    - Leptospirosis ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_seasonal_influenza
+  examples: '- What are the symptoms of Seasonal Influenza?
+
+    - Tell me the symptoms of Seasonal Influenza.
+
+    - How do I know if I have Seasonal Influenza?
+
+    - Signs of Seasonal Influenza?
+
+    - Common symptoms of Seasonal Influenza
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Seasonal Influenza ହୋଇଛି କି?'
+- intent: ask_prevention_seasonal_influenza
+  examples: '- How to prevent Seasonal Influenza?
+
+    - Prevention tips for Seasonal Influenza.
+
+    - How can I avoid Seasonal Influenza?
+
+    - Ways to prevent Seasonal Influenza
+
+    - Steps to prevent Seasonal Influenza
+
+    - Seasonal Influenza ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_seasonal_influenza
+  examples: '- Is there a vaccine for Seasonal Influenza?
+
+    - Tell me about Seasonal Influenza vaccine.
+
+    - Do we have vaccination for Seasonal Influenza?
+
+    - Seasonal Influenza vaccine availability?
+
+    - Is Seasonal Influenza vaccine recommended?
+
+    - Seasonal Influenza ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_pneumonia
+  examples: '- What are the symptoms of Pneumonia?
+
+    - Tell me the symptoms of Pneumonia.
+
+    - How do I know if I have Pneumonia?
+
+    - Signs of Pneumonia?
+
+    - Common symptoms of Pneumonia
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Pneumonia ହୋଇଛି କି?'
+- intent: ask_prevention_pneumonia
+  examples: '- How to prevent Pneumonia?
+
+    - Prevention tips for Pneumonia.
+
+    - How can I avoid Pneumonia?
+
+    - Ways to prevent Pneumonia
+
+    - Steps to prevent Pneumonia
+
+    - Pneumonia ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_pneumonia
+  examples: '- Is there a vaccine for Pneumonia?
+
+    - Tell me about Pneumonia vaccine.
+
+    - Do we have vaccination for Pneumonia?
+
+    - Pneumonia vaccine availability?
+
+    - Is Pneumonia vaccine recommended?
+
+    - Pneumonia ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_diarrhea
+  examples: '- What are the symptoms of Diarrhea?
+
+    - Tell me the symptoms of Diarrhea.
+
+    - How do I know if I have Diarrhea?
+
+    - Signs of Diarrhea?
+
+    - Common symptoms of Diarrhea
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Diarrhea ହୋଇଛି କି?'
+- intent: ask_prevention_diarrhea
+  examples: '- How to prevent Diarrhea?
+
+    - Prevention tips for Diarrhea.
+
+    - How can I avoid Diarrhea?
+
+    - Ways to prevent Diarrhea
+
+    - Steps to prevent Diarrhea
+
+    - Diarrhea ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_diarrhea
+  examples: '- Is there a vaccine for Diarrhea?
+
+    - Tell me about Diarrhea vaccine.
+
+    - Do we have vaccination for Diarrhea?
+
+    - Diarrhea vaccine availability?
+
+    - Is Diarrhea vaccine recommended?
+
+    - Diarrhea ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_measles
+  examples: '- What are the symptoms of Measles?
+
+    - Tell me the symptoms of Measles.
+
+    - How do I know if I have Measles?
+
+    - Signs of Measles?
+
+    - Common symptoms of Measles
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Measles ହୋଇଛି କି?'
+- intent: ask_prevention_measles
+  examples: '- How to prevent Measles?
+
+    - Prevention tips for Measles.
+
+    - How can I avoid Measles?
+
+    - Ways to prevent Measles
+
+    - Steps to prevent Measles
+
+    - Measles ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_measles
+  examples: '- Is there a vaccine for Measles?
+
+    - Tell me about Measles vaccine.
+
+    - Do we have vaccination for Measles?
+
+    - Measles vaccine availability?
+
+    - Is Measles vaccine recommended?
+
+    - Measles ପାଇଁ ଟୀକା ଅଛି କି?'
+- intent: ask_symptoms_kala_azar
+  examples: '- What are the symptoms of Kala Azar?
+
+    - Tell me the symptoms of Kala Azar.
+
+    - How do I know if I have Kala Azar?
+
+    - Signs of Kala Azar?
+
+    - Common symptoms of Kala Azar
+
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Kala Azar ହୋଇଛି କି?'
+- intent: ask_prevention_kala_azar
+  examples: '- How to prevent Kala Azar?
+
+    - Prevention tips for Kala Azar.
+
+    - How can I avoid Kala Azar?
+
+    - Ways to prevent Kala Azar
+
+    - Steps to prevent Kala Azar
+
+    - Kala Azar ପାଇଁ ପ୍ରତିରୋଧ ଟିପ୍ସ।'
+- intent: ask_vaccine_kala_azar
+  examples: '- Is there a vaccine for Kala Azar?
+
+    - Tell me about Kala Azar vaccine.
+
+    - Do we have vaccination for Kala Azar?
+
+    - Kala Azar vaccine availability?
+
+    - Is Kala Azar vaccine recommended?
+
+    - Kala Azar ପାଇଁ ଟୀକା ଅଛି କି?'
