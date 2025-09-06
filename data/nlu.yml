@@ -1,17 +1,27 @@
 version: '3.1'
 nlu:
+- intent: greet
+  examples: |
+    - ନମସ୍କାର
+    - କେମିତି ଅଛ ?
+    - ହେଲୋ
+
 - intent: ask_symptoms_dengue
-  examples: '- What are the symptoms of Dengue?
+  examples: |
+    - ଡେଙ୍ଗୁର ଲକ୍ଷଣ କ'ଣ ?
+    - ମୋତେ ଡେଙ୍ଗୁ ସମ୍ବନ୍ଧୀୟ ସୂଚନା ଦିଅ
 
+- intent: ask_symptoms_dengue
+  examples: |
+    - What are the symptoms of Dengue?
     - Tell me the symptoms of Dengue.
-
     - How do I know if I have Dengue?
-
     - Signs of Dengue?
-
     - Common symptoms of Dengue
+    - ଡେଙ୍ଗୁର ଲକ୍ଷଣ କ'ଣ ?
+    - ମୋତେ ଡେଙ୍ଗୁ ସମ୍ବନ୍ଧୀୟ ସୂଚନା ଦିଅ
+    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Dengue ହୋଇଛି କି?
 
-    - ମୋତେ କିଭଳି ଜଣିବି ମୋତେ Dengue ହୋଇଛି କି?'
 - intent: ask_prevention_dengue
   examples: '- How to prevent Dengue?
 
