@@ -12,10 +12,24 @@ public-health-chatbot/
 ├── actions/                 # Custom actions (if any)
 │   └── __init__.py
 │
+├── backend/                 # Flask backend for chatbot API
+│   └── app.py
+│   └── static
+│       └── images
+│       └── script.js
+│       └── style.css
+│       └── templates
+│           └── index.html
+│
 ├── data/                    # Training data
 │   ├── nlu.yml              # NLU training data (intents & examples)
 │   ├── rules.yml            # Rules for the bot responses
 │   └── stories.yml          # Conversation stories
+│
+├── frontend/                # Web frontend for chatbot UI
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 │
 ├── models/                  # Pre-trained Rasa model files (.tar.gz)
 │   ├── 20250905-175706-selfish-status.tar.gz
@@ -36,6 +50,8 @@ public-health-chatbot/
 ## 📁 File Descriptions
 
 * **actions/** – Contains Python files for custom actions. In this project, custom actions are minimal.
+* **backend/app.py** – Flask API that connects the Rasa chatbot with the frontend.
+* **frontend/** – Web-based user interface for chatting with the bot.
 * **data/nlu.yml** – Defines intents and example user messages for training the bot.
 * **data/rules.yml** – Defines rules for expected responses to certain intents.
 * **data/stories.yml** – Example conversations to teach the bot dialogue flow.
@@ -79,22 +95,27 @@ public-health-chatbot/
    rasa run
    ```
 
-5. **Chat with the bot**
+5. **Run the backend**
 
-   * Try queries like:
+   ```bash
+   cd backend
+   python app.py
+   ```
 
-     * "What are the symptoms of Dengue?"
-     * "How can I prevent Malaria?"
-     * "Tell me about COVID-19 vaccine."
+6. **Open the frontend**
+
+   * Open `frontend/index.html` in your browser to chat with the bot.
 
 ---
 
 ## 🛠️ Work Done by Team Members
 
-| Name        | Contribution                                                                                                                                                                                                              |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nikil**   | - Created the Rasa chatbot framework.<br>- Developed intents and responses for diseases.<br>- Trained the initial models and created the pre-trained `.tar.gz` files.<br>- Added English and Odia responses.<br>- Designed NLU training data (`nlu.yml`) and conversation stories (`stories.yml`).<br>- Added rules for predictable responses (`rules.yml`).<br>- Verified bot responses, fixed errors             |
-| **Gowtham** | - Collected trusted health data from WHO, ICMR, and MoHFW.<br> - Structured the data into a chatbot-friendly CSV with columns: Disease, Symptoms (EN), Prevention (EN), Vaccine Info (EN), Source Link.<br> - Translated key fields (Symptoms & Prevention) into Odia.<br> - Shared the finalized dataset with Nikil for training. |
+| Name        | Contribution                                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nikil**   | - Created the Rasa chatbot framework.<br>- Developed intents and responses for diseases.<br>- Trained the initial models and created the pre-trained `.tar.gz` files.<br>- Added English and Odia responses.<br>- Designed NLU training data (`nlu.yml`) and conversation stories (`stories.yml`).<br>- Added rules for predictable responses (`rules.yml`).<br>- Verified bot responses, fixed errors. |
+| **Gowtham** | - Collected trusted health data from WHO, ICMR, and MoHFW.<br>- Structured the data into a chatbot-friendly CSV with columns: Disease, Symptoms (EN), Prevention (EN), Vaccine Info (EN), Source Link.<br>- Translated key fields (Symptoms & Prevention) into Odia.<br>- Shared the finalized dataset with Nikil for training.                                                                         |
+| **Durkesh** | - Implemented Flask-based backend (`backend/app.py`) to expose REST API for chatbot queries.<br>- Connected Rasa model with frontend through `/chat` endpoint.<br>- Tested backend API using cURL and Postman.<br>- Ensured smooth integration with Rasa actions and responses.                                                                                                                         |
+| **Sheik**   | - Built the web frontend (`frontend/index.html`, `style.css`, `script.js`).<br>- Designed user-friendly chat interface with CSS.<br>- Connected frontend with Flask API using JavaScript fetch requests.<br>- Verified end-to-end functionality by testing user queries through browser.                                                                                                                |
 
 ---
 
@@ -118,4 +139,4 @@ public-health-chatbot/
 
 ---
 
-**Project Status:** ✅ Completed Phase 1 – Fully functional chatbot with pre-trained models.
+**Project Status:** ✅ Completed Phase 1 – Fully functional chatbot with web-based interface and pre-trained models.
